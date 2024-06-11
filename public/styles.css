@@ -1,0 +1,384 @@
+::-webkit-scrollbar {
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+body{
+    background-image: url('blob-scatter.png');
+    height: 100vh;
+    background-color: #f7ede2;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+header {
+    display:flex;
+    justify-content: center;
+    background-color: #84a59d;
+    margin: auto -16px;
+    padding: 16px 32px;
+    height: 117px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.075) 0 1px
+  }
+
+
+header h1 {
+    margin-top: 10px;
+    margin-right: 400px;
+    color: #333333;
+    width: 200px;
+    font-family: "Work Sans";
+    font-weight: 200;
+    font-size: 30px;
+  }
+
+header a {
+    font-family: 'sans-serif';
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: darkcyan;
+}
+
+.firstA {
+    margin-left: 0;
+}
+
+header img {
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+}
+
+
+.Top{
+    background-image: url("layered-waves-haikei.png");
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.homeoHeading {
+    font-size: 70px;
+    font-weight: 300;
+    color: #84a59d;
+    margin-left: 75px;
+    font-family: 'sans-serif';
+}
+
+.homeoPara {
+    color:#F7EDE2;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.AboutUs{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.AboutUs h2{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'sans-serif';
+    margin-bottom: 30px;
+}
+
+.AboutUs img {
+    float: left;
+    width: 40%;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    margin-right: 100px;
+}
+
+.AboutUS h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+}
+
+.AboutusImage {
+    width: 80%;
+    margin-left: 100px;
+}
+
+.ReviewContainer{
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Reviews{
+    margin-top: 80px;
+    background-color: #E8D6C9;
+    height: 450px;
+    border-bottom: 50px solid beige;
+}
+
+.Reviews h2{
+    color: #84a59d;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.Reviews p {
+    text-align: center;
+    color:#F7EDE2;
+    font-size: 40px;
+    width: 300px;
+}
+
+
+
+
+.c-item{
+    max-width: 1000px;
+    height: 250px;
+    
+}
+
+.c-img {
+    height: 100%;
+}
+
+#carouselExample{
+    width: 50%;
+    left: 100px;
+}
+
+.Appointment {
+    height: 700px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.containerS {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-label {
+    font-size: 21px;
+}
+
+.AppointmentContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    width: 50%;
+    margin:auto;
+    padding: 3px;
+    padding-top: 15px;
+    background-color: #D7D3CC;
+}
+
+.header-link{
+    cursor: pointer;
+    text-decoration: none; /* Optional: to remove underline */
+    color: inherit;
+}
+
+.header-link:hover{
+    color: darkcyan;
+}
+
+.form-label::after {
+    content:" *";
+    color: red;
+}
+.submitBtn{
+    background-color:#928F8A;
+}
+
+.ContactUs{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #84a59d;
+    border-radius: 25px;
+    width: 40%;
+    margin: auto;
+}
+
+.ContactUs h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 8px;
+    border-radius: 25px;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+}
+
+
+.ContactUs h3{
+    color: white;
+    margin-left: 50px;
+}
+.AboutUs h2{
+    margin-left: 30%;
+}
+.footer{
+    margin-top: 30px;
+    padding: 16px;
+    background-color: #84a59d;
+}
+
+.FooterUp{
+    background-color: #84a59d;
+}
+
+@media(max-width:1200px){
+    header h1 {
+        margin-right: 100px;
+    }
+
+    .ContactUs{
+        height: auto;
+    }
+
+    .Top img{
+        height: 400px;
+    }
+
+    .Reviews h2{
+        position: relative;
+        right: 40px;
+        margin-left: 2px;
+    }
+
+    .carousel-item{
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media (max-width:1100px){
+    #carouselExample{
+        width: 75%;
+    }
+
+    .c-item{
+        max-width: 709.5px;
+    }
+
+    .Reviews p{
+        display: none;
+    }
+
+    .ContactUs{
+        width: 50%;
+    }
+
+    .ContactUs h2{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:1000px){
+    header a{
+        display: none;
+    }
+    .TEXT{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 12%;
+    }
+    .Top img {
+        display: none;
+    }
+
+    .AboutusImage{
+        display: none;
+    }
+
+    .AboutUs{
+        height: auto;
+        margin: 20px;
+        padding: 0 10px;
+    }
+
+    .AboutUs h5{
+        max-width: 100%;
+        margin: 20px auto;
+        font-size: 20px;
+        height: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .AboutUs h2{
+        margin-left: 0;
+
+    }
+
+    .Appointment{
+        height: auto;
+    }
+
+    .containerS {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:900px){
+
+    .ContactUs h2{
+        margin-left: 1px;
+    }
+    .ContactUs h3{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:750px){
+    .ReviewContainer h2{
+        position: relative;
+        right: 60px;
+    }
+    #carouselExample{
+        width: 100%;
+    }
+
+    .c-item{
+        position: relative;
+        right: 30px;
+        max-width: 1200px;
+    }
+
+    .TEXT{
+        margin-left: 6%;
+    }
+
+    .submitBtn{
+        margin-left: 2%;
+    }
+}
