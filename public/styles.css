@@ -1,3 +1,10 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -24,7 +31,7 @@ header {
     display:flex;
     justify-content: center;
     background-color: #84a59d;
-    margin: auto -16px;
+    margin: auto -16;
     padding: 16px 32px;
     height: 117px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -46,6 +53,7 @@ header h1 {
 header a {
     font-family: 'sans-serif';
     margin: 20px;
+    width: 300px;
     margin-top: 20px;
     font-size: 25px;
     text-decoration: none;
@@ -68,6 +76,7 @@ header img {
 
 
 .Top{
+    width: 100%;
     background-image: url("layered-waves-haikei.png");
     display: flex;
     align-items: center;
@@ -128,6 +137,7 @@ header img {
 }
 
 .Reviews{
+    width: 100%;
     margin-top: 80px;
     background-color: #E8D6C9;
     height: 450px;
@@ -163,7 +173,6 @@ header img {
 
 #carouselExample{
     width: 50%;
-    left: 100px;
 }
 
 .Appointment {
@@ -250,16 +259,38 @@ header img {
 }
 
 @media(max-width:1200px){
+    header img{
+        margin-top: 40px;
+    }
     header h1 {
+        margin-top: 50px;
         margin-right: 100px;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+    }
+
+    .Reviews{
+        height: 500px;
     }
 
     .ContactUs{
         height: auto;
     }
 
+    .Top{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        background-image: url("Background2.png");
+    }
+
     .Top img{
-        height: 400px;
+       margin-bottom: 40px;
     }
 
     .Reviews h2{
@@ -294,29 +325,78 @@ header img {
     .ContactUs h2{
         font-size: 25px;
     }
+    .AboutusImage{
+        margin-left: 35%;
+        text-align: center;
+        float: none;
+    }
+    
+    .AboutUs{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin: 20px;
+        padding: 0 10px;
+    }
+    
+    .AboutUs h5{
+        max-width: 100%;
+        margin: 20px auto;
+        font-size: 20px;
+        height: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+    }
+    
+    .AboutUs h2{
+        margin-left: 0;
+    
+    }
+    
+    .ReviewContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ReviewContainer h2{
+        margin-bottom: 50px;
+    }
+
+    .Reviews h2{
+        color: #84a59d;
+        font-size: 50px;
+        writing-mode:horizontal-tb;
+      text-orientation:sideways;
+    }
 
 }
 
+
 @media(max-width:1000px){
+
     header a{
         display: none;
     }
+
+
+
     .TEXT{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 12%;
     }
-    .Top img {
-        display: none;
-    }
-
     .AboutusImage{
-        display: none;
+        margin-left: 35%;
+        text-align: center;
+        float: none;
     }
 
     .AboutUs{
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
         margin: 20px;
         padding: 0 10px;
     }
